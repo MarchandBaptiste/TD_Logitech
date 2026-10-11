@@ -1,0 +1,9 @@
+.footer__socials{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.footer__icon{
+    
+}

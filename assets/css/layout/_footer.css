@@ -1,0 +1,7 @@
+.l-footer{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    padding: 7rem 5rem;
+}
