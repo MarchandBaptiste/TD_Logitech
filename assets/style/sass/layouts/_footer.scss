@@ -1,0 +1,16 @@
+@use "../abstracts/index" as v;
+@use "../mixins/index" as m;
+
+.l-footer {
+  background-color: v.$color-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7rem 5rem;
+  gap: v.$spacer-lg;
+  @include m.respond-to("lg") {
+    display: flex;
+    flex-direction: row;
+  }
+}

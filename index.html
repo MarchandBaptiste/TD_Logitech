@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="description" />
+    <meta name="description" content="Logitech G - Technologie RVB LIGHTSYNC" />
+        <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Logitech G - Technologie RVB LIGHTSYNC</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/style/css/main.css" />
   </head>
 
   <body>
@@ -154,42 +158,46 @@
     <footer class="l-footer">
       <p class="footer__copyright">© 2023 Logitech. Tous droits réservés.</p>
 
-      <form method="post" action="" class="footer__newsletter">
-        <input
+      <form method="post" action="" class="newsletter">
+        <div class="newsletter__input">
+          <input
           type="email"
           id="email"
           name="email"
-          class="footer__email"
+          class="newsletter__email"
           placeholder="Adresse e-mail"
           required
-        />
-        <button type="submit" class="btn btn--dark footer__submit">
-          S'abonner
-        </button>
-        <input
+          />
+          <button type="submit" class="newsletter__submit">
+            S'abonner
+          </button>
+        </div>
+        <div class="newsletter__input">
+          <input
           type="checkbox"
           id="newsletter"
           name="newsletter"
-          class="footer__checkbox"
-        />
-        <label for="newsletter" class="footer__consent">
-          Oui, je souhaite recevoir des courriers électroniques sur les
-          produits, les actualités et autres de Logitech G*
-        </label>
+          class="newsletter__checkbox"
+          />
+          <label for="newsletter" class="newsletter__consent">
+            Oui, je souhaite recevoir des courriers électroniques sur les
+            produits, les actualités et autres de Logitech G*
+          </label>
+        </div>
       </form>
 
-      <div class="footer__socials">
-        <a href="" class="footer__social">
-          <img src="./assets/icons/facebook.svg" alt="" class="footer__icon" />
+      <div class="socials">
+        <a href="" class="socials__social">
+          <img src="./assets/icons/facebook.svg" alt="" class="socials__icon" />
         </a>
-        <a href="" class="footer__social">
-          <img src="./assets/icons/twitter.svg" alt="" class="footer__icon" />
+        <a href="" class="socials__social">
+          <img src="./assets/icons/twitter.svg" alt="" class="socials__icon" />
         </a>
-        <a href="" class="footer__social">
-          <img src="./assets/icons/instagram.svg" alt="" class="footer__icon" />
+        <a href="" class="socials__social">
+          <img src="./assets/icons/instagram.svg" alt="" class="socials__icon" />
         </a>
-        <a href="" class="footer__social">
-          <img src="./assets/icons/youtube.svg" alt="" class="footer__icon" />
+        <a href="" class="socials__social">
+          <img src="./assets/icons/youtube.svg" alt="" class="socials__icon" />
         </a>
       </div>
     </footer>

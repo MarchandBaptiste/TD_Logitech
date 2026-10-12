@@ -1,0 +1,7 @@
+@use "../abstracts/index" as v;
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
