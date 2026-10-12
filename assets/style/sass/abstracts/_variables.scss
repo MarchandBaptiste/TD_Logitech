@@ -1,0 +1,45 @@
+// Colors
+$color-mustard: #FFBD00;
+$color-green: #14EA84;
+$color-pink: #FD64AB;
+$color-purple: #A531D2;
+$color-dark-blue: #675bd2;
+$color-blue: #00B8FC;
+$color-border: #e2e8f0;
+$color-grey: #D9D9D9;
+$color-white: #fff;
+$color-black: #000;
+// switches Colors
+$switches: (
+  blue: (
+    bg: $color-blue,
+   ),
+  dark-blue: (
+    bg: $color-dark-blue,
+  ),
+  black: (
+    bg: $color-black,
+  ),
+);
+
+// Typo
+$primary-font: "Inter", sans-serif;
+$size-title: 1.5rem;
+$size-content: 1rem;
+
+// Spacings
+$spacer: 1rem;
+$spacer-sm: 0.5rem;
+$spacer-lg: 2rem;
+
+// Border Radius
+$border-radius: 0.5rem;
+$border-radius-lg: 0.75rem;
+$border-radius-full: 9999px;
+
+// breakpoints
+$breakpoints: (
+  lg: 1024px,
+  md: 768px,
+  sm: 576px,
+);

@@ -1,0 +1,27 @@
+@use "../abstracts/index" as v;
+@use "../mixins/index" as m;
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacer-sm;
+  max-width: 300px;
+  @include m.respond-to("lg") {
+    width: 25%;
+  }
+  &__input {
+    display: flex;
+  }
+  &__email {
+    border: 0px;
+    padding: v.$spacer-sm;
+    width: 80%;
+  }
+  &__submit {
+    padding: v.$spacer-sm v.$spacer;
+    background-color: v.$color-black;
+    color: v.$color-white;
+    border-radius: v.$border-radius;
+    border: 0px;
+  }
+}
