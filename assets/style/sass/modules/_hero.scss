@@ -1,0 +1,55 @@
+@use "../abstracts/index" as v;
+@use "../mixins/index" as m;
+
+.l-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: v.$spacer;
+  align-items: center;
+  background-image:
+    linear-gradient(#fbf9f900, v.$color-white),
+    linear-gradient(
+      0.25turn,
+      v.$color-dark-blue,
+      v.$color-purple,
+      v.$color-pink,
+      v.$color-mustard,
+      v.$color-green
+    ),
+    url("/assets/img/trame.png");
+  background-blend-mode: screen;
+  background-repeat: repeat;
+  border-top: v.$spacer solid;
+  border-image: linear-gradient(
+      0.25turn,
+      v.$color-dark-blue,
+      v.$color-purple,
+      v.$color-pink,
+      v.$color-mustard,
+      v.$color-green
+    )
+    1;
+  height: 40vh;
+  padding: 0 30rem;
+  text-align: center;
+}
+
+.hero {
+  padding: v.$spacer-lg;
+  height: auto;
+  &__title {
+    font-size: v.$size-title;
+  }
+  &__description {
+    font-size: v.$size-content;
+    width: 100%;
+    @include m.respond-to("lg") {
+      width: 50%;
+    }
+  }
+  &__divider {
+    border: 2px solid v.$color-black;
+    width: 10%;
+  }
+}
