@@ -1,0 +1,13 @@
+@use "../abstracts/index" as v;
+
+.l-header {
+  background-image: url("/assets/img/pexels-soumil-kumar-735911.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  align-items: center;
+  text-align: center;
+}
