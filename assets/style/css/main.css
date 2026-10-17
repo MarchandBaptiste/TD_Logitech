@@ -133,6 +133,43 @@ body {
   }
 }
 
+.shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.shop__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.shop__title {
+  text-align: center;
+}
+
+.filter__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    gap: 1rem;
+  }
+}
+.filter__button {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card {
   max-width: 450px;
   height: auto;
@@ -232,6 +269,12 @@ body {
   color: #fff;
   border-radius: 8px;
   border: 1px solid #00B8FC;
+}
+.btn--dark {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 20px;
 }
 
 .btn:hover {
