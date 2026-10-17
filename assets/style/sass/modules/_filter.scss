@@ -1,0 +1,38 @@
+@use "../abstracts/index" as v;
+@use "../mixins/index" as m;
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: v.$spacer-lg;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: v.$spacer-lg;
+    padding-top: v.$spacer-lg;
+  }
+  &__title {
+    text-align: center;
+  }
+}
+.filter {
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: v.$spacer-lg;
+    @include m.respond-to("md") {
+      gap: v.$spacer;
+    }
+  }
+  &__button {
+    text-decoration: none;
+    color: inherit;
+  }
+}
