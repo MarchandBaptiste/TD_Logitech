@@ -1,7 +1,14 @@
-.shop{
-    display: flex;
+@use "../abstracts/index" as v;
+
+.shop {
+  display: flex;
 }
 
-.card-group{
-    display: grid;
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: v.$spacer;
+  justify-content: center;
+  width: 100%;
+  padding: v.$spacer-lg;
 }

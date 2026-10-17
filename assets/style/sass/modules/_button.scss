@@ -1,13 +1,14 @@
 @use "../abstracts/index" as v;
 
 .btn {
-  padding: v.$spacer v.$spacer-lg;
+  padding: v.$spacer-sm v.$spacer;
   background-color: v.$color-blue;
   color: v.$color-white;
   border-radius: 8px;
+  border: 1px solid v.$color-blue;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: v.$color-grey;
+  scale: 1.05;
 }

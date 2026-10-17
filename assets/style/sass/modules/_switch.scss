@@ -1,7 +1,20 @@
-.circle-bloc span {
+@use "sass:map";
+@use "../abstracts/index" as v;
+
+.card__switch {
   width: 14px;
   height: 14px;
   padding: 0;
+  border: 1px solid v.$color-black;
   border-radius: 50%;
-  background-color: red;
+  @each $name, $theme in v.$switches {
+    &--#{$name} {
+      background: map.get($theme, bg);
+    }
+  }
+}
+
+.card__switch:hover{
+  scale: 1.2;
+  cursor: pointer;
 }
