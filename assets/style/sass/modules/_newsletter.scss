@@ -11,6 +11,7 @@
   }
   &__input {
     display: flex;
+    align-items: start;
   }
   &__email {
     border: 0px;
@@ -23,5 +24,8 @@
     color: v.$color-white;
     border-radius: v.$border-radius;
     border: 0px;
+  }
+  &__consent{
+    padding-left: v.$spacer-sm;
   }
 }

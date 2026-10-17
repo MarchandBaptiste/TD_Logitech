@@ -20,6 +20,12 @@ $switches: (
   black: (
     bg: $color-black,
   ),
+  blackAndBlue: (
+    bg: linear-gradient(310deg, #00B8FC 50%, #000 50%),
+  ),
+  blackAndWhite: (
+    bg: linear-gradient(310deg, #fff 50%, #000 50%),
+  ),
 );
 
 // Typo
