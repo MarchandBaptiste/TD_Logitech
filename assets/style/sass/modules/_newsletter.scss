@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: v.$spacer-sm;
-  max-width: 300px;
+  max-width: 400px;
   @include m.respond-to("lg") {
     width: 25%;
   }
@@ -17,6 +17,8 @@
     border: 0px;
     padding: v.$spacer-sm;
     width: 80%;
+    border-top-left-radius: v.$border-radius;
+    border-bottom-left-radius: v.$border-radius;
   }
   &__submit {
     padding: v.$spacer-sm v.$spacer;
@@ -24,8 +26,10 @@
     color: v.$color-white;
     border-radius: v.$border-radius;
     border: 0px;
+    cursor: pointer;
   }
   &__consent{
     padding-left: v.$spacer-sm;
+    font-size: small;
   }
 }
