@@ -277,6 +277,10 @@ body {
   border: 1px solid #000;
   border-radius: 20px;
 }
+.btn--dark:hover {
+  background-color: #fff;
+  color: #000;
+}
 
 .btn:hover {
   cursor: pointer;
