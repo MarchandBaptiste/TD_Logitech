@@ -1,4 +1,5 @@
 @use "../abstracts/index" as v;
+@use "../mixins/index" as m;
 
 .shop {
   display: flex;
@@ -12,4 +13,7 @@
   justify-items: center;
   width: 100%;
   padding: v.$spacer-lg;
+  @include m.respond-to("lg") {
+    grid-template-columns: repeat(auto-fit, minmax(400px,calc((100% - 3 * #{v.$spacer}) / 4 + 4px)));
+  }
 }
