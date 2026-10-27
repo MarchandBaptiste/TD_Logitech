@@ -12,6 +12,10 @@
     border: 1px solid v.$color-black;
     border-radius: 20px;
   }
+  &--dark:hover{
+    background-color: v.$color-white;
+    color: v.$color-black;
+  }
 }
 
 .btn:hover {

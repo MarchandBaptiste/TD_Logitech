@@ -1,67 +1,66 @@
 @use "../abstracts/index" as v;
 
-.card{
-    max-width: 450px;
-    height: auto;
+.card {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacer;
+  &__media {
+    background-color: v.$color-grey;
+    padding: v.$spacer;
+    aspect-ratio: 1;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  &__badge {
+    background-color: v.$color-black;
+    color: v.$color-white;
+    width: max-content;
+    padding: v.$spacer-sm;
+  }
+  &__series {
+    background-color: v.$color-grey;
+    color: v.$color-black;
+    padding: 0.3rem;
+    width: max-content;
+    writing-mode: sideways-lr;
+  }
+  &__content {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    align-items: flex-start;
     gap: v.$spacer;
-    &__media{
-        background-color: v.$color-grey;
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        flex-direction: column;
-        padding: v.$spacer;
-        height: 100%;
-    }
-    &__badge{
-        background-color: v.$color-black;
-        color: v.$color-white;
-        width: max-content;
-        padding: v.$spacer-sm;
-    }
-    &__series{
-        background-color: v.$color-grey;
-        color: v.$color-black;
-        padding: 0.3rem;
-        width: max-content;
-        writing-mode: sideways-lr;
-    }
-    &__content {
-        display: flex;
-        align-items: flex-start;
-        gap: v.$spacer;
-    }
-    &__flex{
-        display: flex;
-        flex-direction: column;
-        gap: v.$spacer-sm;
-    }
-    &__prices{
-        display: flex;
-        flex-wrap: nowrap;
-        gap: v.$spacer;
-    }
-    &__price--old{
-        color: v.$color-grey;
-    }
-    &__notes{
-        display: flex;
-        gap: v.$spacer-sm;
-    }
-    &__icon{
-        background-color: v.$color-blue;
-        padding: v.$spacer-sm;
-        height: max-content;
-    }
-    &__divider{
-        border: 1px solid v.$color-grey;
-    }
-    &__button{
-        display: flex;
-        align-items: center;
-        width: fit-content;
-    }
+  }
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacer-sm;
+  }
+  &__prices {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: v.$spacer;
+  }
+  &__price--old {
+    color: v.$color-grey;
+  }
+  &__notes {
+    display: flex;
+    gap: v.$spacer-sm;
+  }
+  &__icon {
+    background-color: v.$color-blue;
+    padding: v.$spacer-sm;
+    height: 1.6rem;
+  }
+  &__divider {
+    border: 1px solid v.$color-grey;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
 }
