@@ -14,7 +14,7 @@ body {
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-image: linear-gradient(rgba(251, 249, 249, 0), #fff), linear-gradient(0.25turn, #675bd2, #A531D2, #FD64AB, #FFBD00, #14EA84), url("/assets/img/trame.png");
+  background-image: linear-gradient(rgba(251, 249, 249, 0), #fff), linear-gradient(0.25turn, #675bd2, #A531D2, #FD64AB, #FFBD00, #14EA84), url("../../img/trame.png");
   background-blend-mode: screen;
   background-repeat: repeat;
   border-top: 1rem solid;
@@ -291,7 +291,7 @@ body {
 }
 
 .l-header {
-  background-image: url("/assets/img/pexels-soumil-kumar-735911.jpg");
+  background-image: url("../../img/pexels-soumil-kumar-735911.jpg");
   background-position: center;
   background-size: cover;
   height: 90vh;
